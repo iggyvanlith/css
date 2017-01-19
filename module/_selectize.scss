@@ -1,0 +1,29 @@
+.selectize-control
+{
+	width: 14rem;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.selectize-input
+{
+	float: left;
+	line-height: 1;
+	@extend .form__control;
+
+	&.focus
+	{
+		@extend .form__control:focus;
+	}
+
+	input
+	{
+		font-size: 1rem;
+		line-height: 1;
+	}
+}
+
+.selectize-dropdown
+{
+	@extend .dropdown;
+}

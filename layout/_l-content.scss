@@ -1,0 +1,66 @@
+.l-top
+{
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+.l-content
+{
+	top: 131px;
+	position: fixed;
+	position: relative;
+}
+
+.l-menu
+{
+	position: fixed;
+	width: 13rem;
+	top: 131px;
+	bottom: 0;
+	background: $gray-lighter;
+}
+
+.l-menu-list
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.l-menu-item
+{
+	&.is-active
+	{
+		.l-menu-link
+		{
+			border-left: .25rem solid $brand-primary;
+			padding-left: 1.25rem;
+			color: $brand-primary;
+		}
+	}
+}
+
+.l-menu-link
+{
+	display: block;
+	color: $gray;
+	text-decoration: none;
+	padding: .75rem 1.5rem;
+
+	&:hover
+	{
+		background: darken($gray-lighter, 5%);
+	}
+
+	.icon
+	{
+		margin-right: 1rem;
+	}
+}
+
+.l-content-right
+{
+	position: relative;
+	margin-left: 13rem;	
+}

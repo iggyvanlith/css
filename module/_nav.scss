@@ -1,0 +1,103 @@
+
+.navbar 
+{
+	position: relative;
+	box-shadow: 0 0 0 .2em rgba(0,0,0,.1);
+	width: 100%;
+	top: 0;
+	background: white;
+	line-height: $line-height-sm;
+}
+
+.nav-logo 
+{
+	float: left;
+	padding: .5rem 0;
+	color: $heading-color;
+	font-size: $font-size-lg;
+	text-decoration: none;
+	display: inline-block;
+	line-height: 1;
+	font-weight: bold;
+
+	img
+	{
+		vertical-align: middle;
+		margin-right: .25rem;
+	}
+}
+
+.nav__menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-left: 2em;
+	margin-top: .6rem;
+}
+
+.nav__menu--left {
+	float: left;
+}
+
+.nav__menu--right {
+	float: right;
+}
+
+.nav__menu__item 
+{
+	display: inline-block;
+
+	&.is-active
+	{
+		.nav__menu__link 
+		{
+			padding-bottom: 18px;	
+		}
+	}
+}
+
+.nav__menu__link
+{
+	color: $text-color;
+	vertical-align: bottom;
+	text-decoration: none;
+	display: inline-block;
+	padding: .5rem;
+	line-height: 20px;
+	transition: transform 200ms;
+	border-radius: $border-radius-base;
+
+	&:hover
+	{
+		background: $gray-lighter;
+	}
+}
+
+.nav__menu-parent {
+	position: relative;
+
+	&:hover {
+		.nav__menu-submenu {
+			display: block;
+		}
+	}
+}
+
+.nav__menu-submenu {
+	display: none;
+	position: absolute;
+	box-shadow: $box-shadow;
+	left: 0;
+	margin: 0;
+	border-radius: $border-radius-base;
+
+	.nav__menu-item a{
+		display: block;
+		padding: $font-size/2 $font-size;
+		background: white;
+
+		&:hover {
+			background: $gray-lighter;
+		}
+	}
+}

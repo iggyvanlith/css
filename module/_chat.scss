@@ -1,0 +1,60 @@
+
+.chat {
+	
+}
+
+.chat-form 
+{
+	background: darken($gray-lighter, 5%);
+	padding: $grid-gutter-width/2 $grid-gutter-width/2;
+}
+
+.chat-list 
+{
+	list-style: none;
+	margin: 0;	
+	padding: 0;
+}
+
+.chat-message 
+{
+	margin-bottom: .5rem;
+	@include m-clearfix();
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.chat-message-inner 
+{
+	display: block;
+	padding: $font-size/2;
+	background: darken(white, 3%);
+	border: 1px solid darken(white, 9%);
+	border-radius: $border-radius-base;
+	transition: border-color $transition;
+	cursor: pointer;
+
+	&:hover
+	{
+		border-color: darken($gray-lighter, 10%);
+	}
+}
+
+.chat-message-left .chat-message-inner 
+{
+	float: left;
+}
+
+.chat-message-right .chat-message-inner 
+{
+	border-right: 3px solid $brand-info;
+	float: right;
+}
+
+.chat-message-meta 
+{
+	font-size: $font-size-sm;
+	color: lighten($text-color, 60%);
+}

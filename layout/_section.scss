@@ -1,0 +1,67 @@
+
+.section {
+	padding: 3rem 0;
+}
+
+//SIZE
+.section--xs
+{
+	padding: 1rem 0;
+}
+
+.section--sm 
+{
+	padding: 2rem 0;
+}
+
+.section--lg 
+{
+	padding: 5rem 0;
+}
+
+.section-top-0 
+{
+	padding-top: 0;
+}
+
+.section--content 
+{
+	flex: 1;
+}
+
+
+//COLOR
+.section--primary
+{
+	background: radial-gradient(circle at 0 0, #fefab2 0%,#fec26a 30%,#dd4548 100%);
+}
+
+.section--info 
+{
+	background: $brand-info;
+	color: white;
+}
+
+.section--accent 
+{
+	background: #eee;
+}
+
+//FONTS
+.section-title {
+	margin: 0;
+	text-align: center;
+	margin-bottom: $font-size;
+}
+
+.section-subtitle {
+	opacity: .6;
+	margin-bottom: 1.5*$font-size;
+	margin-top: 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+.section-title + .section-subtitle {
+	margin-top: -.5em;
+}

@@ -1,0 +1,28 @@
+.map__wrap
+{
+	position: relative;
+	width: 100%;
+	margin: 1rem 0;
+	// border: 3px solid $gray-lighter;
+	overflow: hidden;
+	border-radius: $border-radius-base;
+	// padding: 1px;
+}
+
+.map
+{
+	width: 100%;
+	border: 0;
+	height: 15rem;
+}
+
+.map__info
+{
+	position: absolute;
+	top: .5rem;
+	left: .5rem;
+	background: white;
+	border-radius: $border-radius-base;
+	padding: .7em 1em;
+	line-height: $line-height-sm;
+}

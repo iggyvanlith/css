@@ -1,0 +1,29 @@
+
+
+.table 
+{
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+
+	th {
+		font-weight: bold;
+		border-bottom: 2px solid darken($gray-lighter,5%);
+		padding: 1em;
+	}
+
+	tr {
+		&:hover {
+			td {
+				background: $gray-lighter;
+			}
+		}
+	}
+
+	td {
+		border-bottom: 1px solid darken($gray-lighter,5%);
+		padding: 1em;
+		transition: background 200ms;
+		cursor: pointer;
+	}
+}

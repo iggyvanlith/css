@@ -1,0 +1,30 @@
+.blog {
+	border-bottom: 1px solid $gray-lighter;
+	padding: 2em 0;
+
+	&:first-child {
+		padding-top: 0;
+	}
+
+	&:last-child {
+		border-bottom: 0;
+	}
+}
+
+.blog-title {
+	margin: 0;
+	margin-bottom: .5em;
+	line-height: 1;
+}
+
+.blog-meta {
+	margin: 0;
+	padding: 0;
+	margin-bottom: $font-size;
+	list-style: none;
+
+	li {
+		font-size: $font-size-sm;
+		opacity: .7;
+	}
+}

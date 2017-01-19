@@ -1,0 +1,17 @@
+
+.alert {
+	padding: .5em 1em;
+	border-radius: $border-radius-base;
+	margin-bottom: 1em;
+	display: inline-block;
+}
+
+.alert-default {
+	background: $brand-info;
+	color: white;
+}
+
+.alert-danger {
+	background: $brand-danger;
+	color: white;
+}

@@ -1,0 +1,32 @@
+
+.header 
+{
+	padding: 5rem 0;
+	color: $heading-color; 
+}
+
+.header__title 
+{
+	font-size: 2.8rem;
+	margin: 0 0 0 0;
+}
+
+.header__subtitle 
+{
+	opacity: .6;
+	margin: 0 0 1em 0;
+	font-size: 1.5rem;
+}
+
+.header__form
+{
+	display: inline-block;
+	padding: .25rem;
+	background: rgba(0,0,0,.2);
+	border-radius: $border-radius-base;
+}
+
+.header__searchform
+{
+	width: 17rem;
+}

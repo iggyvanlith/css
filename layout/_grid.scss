@@ -1,0 +1,40 @@
+
+
+.margin-md-1 {
+	margin-bottom: $font-size;
+}
+
+@media (min-width: $screen-md-min) {
+
+	.margin-md-1 {
+		margin-bottom: 0;
+	}
+
+	
+	.container--md {
+		width: $container-md;
+	}
+}
+
+
+.container--md
+{
+	max-width: $screen-md-min;
+}
+
+.container--sm
+{
+	max-width: $screen-sm-min;
+}
+
+.container-wide 
+{
+	@include m-clearfix();
+	padding: 0 $grid-gutter-width;
+}
+
+
+.row
+{
+	@include m-clearfix();
+}

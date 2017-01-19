@@ -1,0 +1,12 @@
+
+/* Suggestion on styling for the .icon class.
+1. Will be inherited from parent's 'color' property.
+2. Resize the icon by setting `font-size` on either .icon itself or parent.
+*/
+.icon {
+  fill: currentColor; /* 1. */
+  width: 1em; /* 2. */
+  height: 1em; /* 2. */
+  vertical-align: middle;
+  font-size: $font-size;
+}

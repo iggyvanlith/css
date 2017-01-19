@@ -1,0 +1,13 @@
+.status
+{
+	display: inline-block;
+	border-radius: 50%;
+	height: .5em;
+	width: .5em;
+	vertical-align: middle;
+}
+
+.status--online
+{
+	background: green;
+}

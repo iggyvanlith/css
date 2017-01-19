@@ -1,0 +1,102 @@
+@mixin button-variant($background, $color) {
+
+	background: linear-gradient(lighten($background, 3%), darken($background, 3%));
+	color: $color;
+
+	&:hover {
+		background: lighten($background, 5%);
+		color: $color;
+	}
+}
+
+
+
+.btn {
+	display: inline-block;
+	cursor: pointer;
+	padding: .8em 1em;
+	border: 0;
+	font-size: 1em;
+	transition: box-shadow 100ms;
+	text-decoration: none;
+	text-align: center;
+	box-shadow: inset 0 1px 0 rgba(255,255,255, .15);
+	border-radius: $border-radius-base;
+	line-height: $line-height-sm;
+
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+
+	&:active {
+		transform: none;
+		box-shadow: $box-shadow, inset 0 3px 5px rgba(0,0,0,.2);		
+	}
+}
+
+
+// colors
+.btn--default 
+{
+	background: none;
+	border: 2px solid rgba(0,0,0,.15);
+	color: $text-color;
+
+	&:hover
+	{
+		border-color: rgba(0,0,0,.75);
+	}
+}
+
+.btn--primary {
+	background: linear-gradient(#88D1A3, #2E89BD);
+	border-radius: $border-radius-base;
+	color: white;
+	box-shadow: inset 0 -2px 2px rgba(0,0,0,.3);
+	background-clip: padding-box;
+
+	&:hover,
+	&:focus
+	{
+		background: linear-gradient(#88D1A3 15%, #2E89BD 100%);
+		background-clip: padding-box;
+	}
+
+	&:active
+	{
+		box-shadow: inset 0 2px 4px rgba(0,0,0,.15);
+		transform: translateY(1px);
+	}
+}
+
+.btn--success {
+	@include button-variant($brand-success, white);
+}
+
+.btn--info {
+	@include button-variant($brand-info, white);
+}
+
+.btn--border {
+	@include button-variant($gray-lighter, $text-color);
+}
+
+.btn--no-border {
+	border: 0;
+	border-radius: $border-radius-base;
+}
+
+
+//sizing
+.btn--block {
+	width: 100%;
+}
+
+.btn--lg {
+	font-size: $font-size-lg;
+}
+
+.btn--sm {
+	font-size: $font-size-sm;
+}

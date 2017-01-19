@@ -1,0 +1,26 @@
+
+.footer {
+	color: $footer-color;
+	background: $footer-bg;
+
+	h1,h2,h3,h4,h5,h6
+	{
+		color: $footer-color;
+	}
+}
+
+.footer__hr
+{
+	margin-top: 3rem;
+	margin-bottom: 1.5rem;
+	border-color: $footer__hr-color;
+}
+
+.footer__link
+{
+	color: $footer-color;
+		
+	&:hover {
+		color: $footer-hover-color;
+	}
+}

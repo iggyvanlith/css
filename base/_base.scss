@@ -1,0 +1,45 @@
+
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background: white;
+}
+
+body {
+	//sticky footer
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+img
+{
+	max-width: 100%;
+}
+
+hr
+{
+	border: 1px solid #eee;
+	margin: 3rem 0;
+}
+
+.hr--sm
+{
+	margin: 1.5rem 0;
+}
+
+
+
+.top-0 {
+	margin-top: 0 !important;
+}
+
+.bottom-0 {
+	margin-bottom: 0 !important;
+}

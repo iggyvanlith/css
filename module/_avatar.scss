@@ -1,0 +1,31 @@
+
+.avatar-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.avatar {
+	border-radius: 50%;
+	overflow: hidden;
+	height: 5.5rem;
+	width: 5.5rem;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 1em;
+	border: .25rem solid rgba(0,0,0,.1);
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.avatar--left
+{
+	float: left;
+}
+
+.avatar__offset
+{
+	margin-left: 6.5rem;
+}

@@ -1,0 +1,98 @@
+.list
+{
+
+}
+
+.list--unstyled
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.list--check
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	.list__item
+	{
+		margin-bottom: .25em;
+	}
+
+	.list__item:before
+	{
+		content: '✓';
+		margin-right: .5em;
+		color: $brand-success;
+	}
+}
+
+.list--inline
+{
+	margin: .5rem 0;
+	padding: 0;
+	
+	li
+	{
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+
+
+.list__group
+{
+	border: 1px solid $gray-lighter;
+	border-radius: $border-radius-base;
+
+	.list__item
+	{
+		padding: .25em .5em;
+		display: block;
+		border-bottom: 1px solid $gray-lighter;
+		text-decoration: none;
+		color: $text-color;
+
+		&:last-child
+		{
+			border-bottom: 0;
+		}
+
+		&:hover
+		{
+			background: $gray-lighter;
+		}
+	}
+}
+
+
+
+.menu-list {
+	list-style: none;
+	padding: 0;
+
+	li.is-active {
+		a {
+			border-bottom-color: $brand-info;
+			color: $brand-info;
+			font-weight: bold;
+		}
+	}
+
+	a {
+		display: block;
+		padding: .5em .7em;
+		text-decoration: none;
+		color: $text-color;
+		border-bottom: 1px solid transparent;
+		transition: background 200ms;
+
+		&:hover {
+			background-color: $gray-lighter;
+		}
+	}
+}

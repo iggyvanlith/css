@@ -1,0 +1,11 @@
+.thumbnail 
+{
+	border: 1px solid $gray-lighter;
+	padding: 3px;
+	display: inline-block;
+
+	img {
+		max-width: 100%;
+		display: block;
+	}
+}
