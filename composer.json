@@ -1,0 +1,11 @@
+{
+    "name": "iggy/css",
+    "description": "My css package",
+    "authors": [
+        {
+            "name": "Iggy van Lith",
+            "email": "iggyvanlith@gmail.com"
+        }
+    ],
+    "require": {}
+}
